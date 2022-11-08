@@ -1,0 +1,23 @@
+# common
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+TCVersion.h
+
+*.xccheckout
+!*.xcworkspacedata
+xcuserdata/
+
+# Ignore the Moonsense frameworks
+MoonsenseSDK.xcframework
+MoonsenseSDK-static.xcframework
+
+# Ignore the Features Frameworks
+FeaturesSDK.xcframework
+FeaturesSDK-static.xcframework
+
+Package.resolved
