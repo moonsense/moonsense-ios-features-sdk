@@ -19,13 +19,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "FeaturesSDK",
-            url: "https://dl.moonsense.io/basic/sdk/raw/names/FeaturesSDK.xcframework/versions/0.1.0-alpha1/FeaturesSDK.xcframework-0.1.0-alpha1.zip",
-            checksum: "74b1598747f4662b63334a0be08514da049593dbc08f7171299bea0bfaf2855c"
+            url: "https://dl.moonsense.io/basic/sdk/raw/names/FeaturesSDK.xcframework/versions/0.1.0/FeaturesSDK.xcframework-0.1.0.zip",
+            checksum: "458e4994315aec753b51b084b99cd967adc1ee66a4deceb06aa581102e153606"
         ),
         .binaryTarget(
             name: "FeaturesSDK-static",
-            url: "https://dl.moonsense.io/basic/sdk/raw/names/FeaturesSDK-static.xcframework/versions/0.1.0-alpha1/FeaturesSDK-static.xcframework-0.1.0-alpha1.zip",
-            checksum: "ce4963175e0d148aa4c45c7a08ffb0d20d17a3bcadba65a0c04a726432b43f05"
+            url: "https://dl.moonsense.io/basic/sdk/raw/names/FeaturesSDK-static.xcframework/versions/0.1.0/FeaturesSDK-static.xcframework-0.1.0.zip",
+            checksum: "c239e87dc0a95b15bc83a7c164ff8d1e4f9f9c4e025cb1069e3aaedd61ad8b24"
         )
     ]
 )
@@ -33,11 +33,11 @@ let package = Package(
 if ProcessInfo.processInfo.environment["MOONSENSE_INCLUDE_CORE_PACKAGES"] != nil {
     package.products.append(Product.library(name: "FeaturesCoreSDK", targets: ["FeaturesCoreSDK"]))
     package.targets.append(Target.binaryTarget(name: "FeaturesCoreSDK",
-                                               url: "https://dl.moonsense.io/basic/sdk/raw/names/FeaturesCoreSDK.xcframework/versions/0.1.0-alpha1/FeaturesCoreSDK.xcframework-0.1.0-alpha1.zip",
-                                               checksum: "2d439358072e62308f315e5f77bec6afdf9dd7af11f236198e36d628fe7b1a84"))
+                                               url: "https://dl.moonsense.io/basic/sdk/raw/names/FeaturesCoreSDK.xcframework/versions/0.1.0/FeaturesCoreSDK.xcframework-0.1.0.zip",
+                                               checksum: "392dc077ec3c5087da0c1b28801279f5c3a4c53d85967467bb9c3c1f00cfb65e"))
 
     package.products.append(Product.library(name: "FeaturesCoreSDK-static", targets: ["FeaturesCoreSDK-static"]))
     package.targets.append(Target.binaryTarget(name: "FeaturesCoreSDK-static",
-                                               url: "https://dl.moonsense.io/basic/sdk/raw/names/FeaturesCoreSDK-static.xcframework/versions/0.1.0-alpha1/FeaturesCoreSDK-static.xcframework-0.1.0-alpha1.zip",
-                                               checksum: "0aecfc03ce7ffa2a97105ae629757c04c5dcfdfafd768a04753ff422a09a160f"))
+                                               url: "https://dl.moonsense.io/basic/sdk/raw/names/FeaturesCoreSDK-static.xcframework/versions/0.1.0/FeaturesCoreSDK-static.xcframework-0.1.0.zip",
+                                               checksum: "327943d6731e21707380dfc56262c523edd60e03b0d98189bc607975f7d4bd3d"))
 }
