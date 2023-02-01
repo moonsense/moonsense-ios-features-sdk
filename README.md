@@ -23,11 +23,11 @@ The `FeaturesSDK-static.xcframework` contains the statically linked variant of t
 
 ## Version History
 
-The latest release of the SDK is `0.1.0`. Details about the current and past releases can be found [here](https://github.com/moonsense/moonsense-ios-features-sdk/releases/).
+The latest release of the SDK is `0.2.0`. Details about the current and past releases can be found [here](https://github.com/moonsense/moonsense-ios-features-sdk/releases/).
 
 ## Prerequisites
 
-- Xcode 13.0+
+- Xcode 14.0+
 - Swift projects must use Swift 5.0 or greater
 - Deployment target of iOS 11.0 or greater
 
@@ -57,23 +57,23 @@ Cocoapods distribution is not currently available but will be supported in an up
 
 The `FeaturesSDK.xcframework.zip`, `FeaturesSDK-static.xcframework.zip` and `FeaturesSDK.doccarchive.zip` artifacts can also be manually integrated into your project. You can download the latest versions from the following links:
 
-* [`FeaturesSDK.xcframework.zip`](https://dl.moonsense.io/basic/sdk/raw/names/FeaturesSDK.xcframework/versions/0.1.0/FeaturesSDK.xcframework-0.1.0.zip)
-* [`FeaturesSDK-static.xcframework.zip`](https://dl.moonsense.io/basic/sdk/raw/names/FeaturesSDK-static.xcframework/versions/0.1.0/FeaturesSDK-static.xcframework-0.1.0.zip)
-* [`FeaturesSDK.doccarchive.zip`](https://dl.moonsense.io/basic/sdk/raw/names/FeaturesSDK.doccarchive/versions/0.1.0/FeaturesSDK.doccarchive-0.1.0.zip)
+* [`FeaturesSDK.xcframework.zip`](https://dl.moonsense.io/basic/sdk/raw/names/FeaturesSDK.xcframework/versions/0.2.0/FeaturesSDK.xcframework-0.2.0.zip)
+* [`FeaturesSDK-static.xcframework.zip`](https://dl.moonsense.io/basic/sdk/raw/names/FeaturesSDK-static.xcframework/versions/0.2.0/FeaturesSDK-static.xcframework-0.2.0.zip)
+* [`FeaturesSDK.doccarchive.zip`](https://dl.moonsense.io/basic/sdk/raw/names/FeaturesSDK.doccarchive/versions/0.2.0/FeaturesSDK.doccarchive-0.2.0.zip)
 
 Once downloaded, unzip the files and drop the expanded files into your project.
 
 *Note:* The downloads require the authorization token as outlined above. For best results download the artifacts using `curl` with the `-n` option. For example:
 
 ```
-curl -n -o FeaturesSDK.xcframework.zip https://dl.moonsense.io/basic/sdk/raw/names/FeaturesSDK.xcframework/versions/0.1.0/FeaturesSDK.xcframework-0.1.0.zip
+curl -n -o FeaturesSDK.xcframework.zip https://dl.moonsense.io/basic/sdk/raw/names/FeaturesSDK.xcframework/versions/0.2.0/FeaturesSDK.xcframework-0.2.0.zip
 ```
 
 ## Sample Applications
 
 The [`moonsense-ios-features-sdk`](https://github.com/moonsense/moonsense-ios-features-sdk) GitHub repository contains a sample application that demonstrates the integration and use of the Moonsense iOS Features SDK. To get started, open the `FeaturesSamples.xcworkspace` Xcode Workspace.
 
-- [`FeaturesSampleApp`](https://github.com/moonsense/moonsense-ios-features-sdk/tree/main/FeaturesSampleApp) - This sample app demonstrates the use of the Moonsense iOS Features SDK within a simple application. The example in this case is quite simple and minimal and can serve as a good starting point for developers looking for a quick integration. The `FeaturesSampleApp` Xcode project contains two targets, `FeaturesSampleApp` and `FeaturesSampleApp-Static`. The `FeaturesSampleApp` target consumes the `FeaturesSDK.xcframework` dynamically linked variant. The `FeaturesSampleApp-Static` target consumes the `FeaturesSDK-static.xcframework` target.
+- [`FeaturesSampleApp`](https://github.com/moonsense/moonsense-ios-features-sdk/tree/main/FeaturesSampleApp) - This sample app demonstrates the use of the Moonsense iOS Features SDK within a simple application. The example in this case is quite simple and minimal and can serve as a good starting point for developers looking for a quick integration. Sessions created with this sample application will contain both [on device generated features](https://docs.moonsense.io/articles/sdk/feature-generation) as well as [network telemetry features](https://docs.moonsense.io/articles/network-telemetry/getting-started). The `FeaturesSampleApp` Xcode project contains two targets, `FeaturesSampleApp` and `FeaturesSampleApp-Static`. The `FeaturesSampleApp` target consumes the `FeaturesSDK.xcframework` dynamically linked variant. The `FeaturesSampleApp-Static` target consumes the `FeaturesSDK-static.xcframework` target.
 
 ## Terms Of Service
 

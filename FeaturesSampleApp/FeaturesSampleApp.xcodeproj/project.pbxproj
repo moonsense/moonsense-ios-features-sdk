@@ -21,8 +21,8 @@
 		24E0513526CED02800D243E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E0513326CED02800D243E0 /* Main.storyboard */; };
 		24E0513726CED02A00D243E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E0513626CED02A00D243E0 /* Assets.xcassets */; };
 		24E0513A26CED02A00D243E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E0513826CED02A00D243E0 /* LaunchScreen.storyboard */; };
-		2C1C9C042018BFCE8FD7A055 /* FeaturesSDK-static in Frameworks */ = {isa = PBXBuildFile; productRef = 252FA35C0E67407AD1A3B1F4 /* FeaturesSDK-static */; };
-		F4C9CD11A85EDD01CF37F11D /* FeaturesSDK in Frameworks */ = {isa = PBXBuildFile; productRef = D8E508FAFB112E7AE6206063 /* FeaturesSDK */; };
+		3A95555C442D5F4DDA62509E /* FeaturesSDK-static in Frameworks */ = {isa = PBXBuildFile; productRef = 4AC05F761BC5B64D51EFE1A5 /* FeaturesSDK-static */; };
+		F4E678323689E7E92C6FA6DD /* FeaturesSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 64855680A07C7954F216765C /* FeaturesSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,7 +57,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24607AB5291AC35900FAB47C /* MoonsenseSDK-static in Frameworks */,
-				2C1C9C042018BFCE8FD7A055 /* FeaturesSDK-static in Frameworks */,
+				3A95555C442D5F4DDA62509E /* FeaturesSDK-static in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24607AB3291AC35900FAB47C /* MoonsenseSDK in Frameworks */,
-				F4C9CD11A85EDD01CF37F11D /* FeaturesSDK in Frameworks */,
+				F4E678323689E7E92C6FA6DD /* FeaturesSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +123,7 @@
 			name = "FeaturesSampleApp-Static";
 			packageProductDependencies = (
 				24607AB4291AC35900FAB47C /* MoonsenseSDK-static */,
-				252FA35C0E67407AD1A3B1F4 /* FeaturesSDK-static */,
+				4AC05F761BC5B64D51EFE1A5 /* FeaturesSDK-static */,
 			);
 			productName = FeaturesSampleApp;
 			productReference = 245DB37D26FA545B003A5B73 /* FeaturesSampleApp-Static.app */;
@@ -145,7 +145,7 @@
 			name = FeaturesSampleApp;
 			packageProductDependencies = (
 				24607AB2291AC35900FAB47C /* MoonsenseSDK */,
-				D8E508FAFB112E7AE6206063 /* FeaturesSDK */,
+				64855680A07C7954F216765C /* FeaturesSDK */,
 			);
 			productName = FeaturesSampleApp;
 			productReference = 24E0512A26CED02800D243E0 /* FeaturesSampleApp.app */;
@@ -178,7 +178,7 @@
 			mainGroup = 24E0512126CED02800D243E0;
 			packageReferences = (
 				24607AB1291AC35900FAB47C /* XCRemoteSwiftPackageReference "moonsense-ios-sdk" */,
-				EE67D05120CA4DFD7C840CC5 /* XCRemoteSwiftPackageReference "moonsense-ios-features-sdk" */,
+				72F0FF9402CFC7CA6F3F8CC9 /* XCRemoteSwiftPackageReference "moonsense-ios-features-sdk" */,
 			);
 			productRefGroup = 24E0512B26CED02800D243E0 /* Products */;
 			projectDirPath = "";
@@ -522,15 +522,15 @@
 			repositoryURL = "https://github.com/moonsense/moonsense-ios-sdk";
 			requirement = {
 				kind = upToNextMinorVersion;
-				minimumVersion = 1.3.0;
+				minimumVersion = 1.5.0;
 			};
 		};
-		EE67D05120CA4DFD7C840CC5 /* XCRemoteSwiftPackageReference "moonsense-ios-features-sdk" */ = {
+		72F0FF9402CFC7CA6F3F8CC9 /* XCRemoteSwiftPackageReference "moonsense-ios-features-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/moonsense/moonsense-ios-features-sdk";
 			requirement = {
 				kind = upToNextMinorVersion;
-				minimumVersion = 0.1.0;
+				minimumVersion = 0.2.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -546,14 +546,14 @@
 			package = 24607AB1291AC35900FAB47C /* XCRemoteSwiftPackageReference "moonsense-ios-sdk" */;
 			productName = "MoonsenseSDK-static";
 		};
-		252FA35C0E67407AD1A3B1F4 /* FeaturesSDK-static */ = {
+		4AC05F761BC5B64D51EFE1A5 /* FeaturesSDK-static */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EE67D05120CA4DFD7C840CC5 /* XCRemoteSwiftPackageReference "moonsense-ios-features-sdk" */;
+			package = 72F0FF9402CFC7CA6F3F8CC9 /* XCRemoteSwiftPackageReference "moonsense-ios-features-sdk" */;
 			productName = "FeaturesSDK-static";
 		};
-		D8E508FAFB112E7AE6206063 /* FeaturesSDK */ = {
+		64855680A07C7954F216765C /* FeaturesSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EE67D05120CA4DFD7C840CC5 /* XCRemoteSwiftPackageReference "moonsense-ios-features-sdk" */;
+			package = 72F0FF9402CFC7CA6F3F8CC9 /* XCRemoteSwiftPackageReference "moonsense-ios-features-sdk" */;
 			productName = FeaturesSDK;
 		};
 /* End XCSwiftPackageProductDependency section */

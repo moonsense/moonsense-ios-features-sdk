@@ -27,22 +27,13 @@ class ViewController: UIViewController {
     }
 
     @IBAction func startSession(_ sender: Any) {
-        let sensorTypes: [SensorType] = [.accelerometer,
-                                         .gyroscope,
-                                         .linearAccelerometer,
-                                         .magnetometer,
-                                         .orientation]
 
-        let featureGenerators = [KurtosisFeatureGenerator(sensorTypes: sensorTypes),
-                                 MeanFeatureGenerator(sensorTypes: sensorTypes),
-                                 PercentileFeatureGenerator(sensorTypes: sensorTypes),
-                                 RMSFeatureGenerator(sensorTypes: sensorTypes),
-                                 SkewnessFeatureGenerator(sensorTypes: sensorTypes),
-                                 StandardDeviationFeatureGenerator(sensorTypes: sensorTypes),
-                                 ZeroCrossingFeatureGenerator(sensorTypes: sensorTypes)]
+        let featureGenerators: [FeatureGenerator] = [DeviceMotionFeatureGenerator(),
+                                                     PointerFeatureGenerator()]
 
         let sessionConfig = SessionConfig(sensorTypes: SensorType.allCases,
-                                          featureGenerators: featureGenerators)
+                                          featureGenerators: featureGenerators,
+                                          networkTelemetryConfig: NetworkTelemetryConfig(ip: true))
 
         _ = try? Moonsense.startSession(duration: 30, sessionConfig: sessionConfig, labels: ["FeaturesSampleApp"])
     }
